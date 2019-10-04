@@ -1,0 +1,9 @@
+CREATE TABLE `book_db`.`new_table` (
+  `itemNumber` VARCHAR(40) NOT NULL,
+  `description` VARCHAR(200) NULL,
+  `retailCost` FLOAT NULL,
+  `yearPublished` BIGINT(15) NULL,
+  `author` VARCHAR(100) NULL,
+  `title` VARCHAR(100) NULL,
+  PRIMARY KEY (`itemNumber`),
+  UNIQUE INDEX `itemNumber_UNIQUE` (`itemNumber` ASC) VISIBLE);
